@@ -1,0 +1,76 @@
+.sidenav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.sidenav__logo {
+  width: 120px;
+  margin: 25px;
+}
+
+.sidenav__logo:hover {
+  cursor: pointer;
+}
+
+.sidenav__button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav__more-container {
+  position: fixed;
+  bottom: 3px;
+}
+
+.sidenav__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: none;
+  border: none;
+  margin: 5px 10px 5px 10px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.sidenav__button:hover {
+  cursor: pointer;
+  background-color: rgba(150, 150, 150, 0.128);
+}
+
+.sidenav__icon-wrapper {
+  width: 30px;
+  height: 30px;
+}
+
+/* mui icons have a default class name of material-icons --
+   see: https://mui.com/material-ui/api/icon/ */
+.sidenav__button:not(:hover) .material-icons.the-icon {
+  font-size: 24px;
+  margin-top: 2px;
+  margin-left: 2px;
+  transition: all 150ms linear 0s;
+}
+
+/* mui icons have a default class name of material-icons --
+   see: https://mui.com/material-ui/api/icon/ */
+.sidenav__button:hover .material-icons.the-icon {
+  font-size: 28px;
+  margin-top: 0px;
+  margin-left: 0px;
+  transition: all 150ms linear 0s;
+}
+
+.sidenav__button > span {
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.sidenav__button .material-icons.the-icon#messages-icon {
+  transform: rotate(-30deg);
+}

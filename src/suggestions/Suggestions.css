@@ -1,0 +1,78 @@
+.suggestions {
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.suggestions__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px; 
+    color: gray;
+}
+
+.suggestions__title > button {
+    background: none;
+    border: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.suggestions__title > button:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.suggestions__users {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestions__one-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.suggestions__avatar-and-username {
+    display: flex;
+    flex-direction: row;
+}
+
+.suggestions__avatar-and-username:hover {
+    cursor: pointer;
+}
+
+.suggestions__avatar {
+    margin-right: 10px;
+}
+
+.suggestions__username-and-message {
+    display: flex;
+    flex-direction: column;
+}
+.suggestions__username {
+    font-weight: bolder;
+}
+
+.suggestions__message {
+    font-weight: lighter;
+    font-size: small;
+}
+
+.suggestions__follow-button {
+    background: none;
+    border: none;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.suggestions__follow-button:hover {
+    cursor: pointer;
+    color: gray;
+}
+
